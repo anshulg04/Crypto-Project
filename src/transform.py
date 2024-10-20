@@ -12,5 +12,5 @@ def transformData(data_to_tform):
     df['changePercent24Hr'] = df['changePercent24Hr'].astype(float)
     df['priceUsd'] = df['priceUsd'].round(2)
     df['changePercent24Hr'] = df['changePercent24Hr'].round(2)
-    df['ModifiedDate'] = datetime.now()
+    df['ModifiedDate'] = datetime.today()
     return df
